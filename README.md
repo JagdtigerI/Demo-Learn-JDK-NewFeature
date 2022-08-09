@@ -2,7 +2,7 @@
 ## 介绍
 这是我自己在学习各版本JDK中新特性的代码存档  
 同时分享我整理在Notion上的笔记  
-[JDK8](https://www.notion.so/seasidetown/JDK8-ce3b068baeac460ea54162483826bf6b)  
+[JDK8](https://seasidetown.notion.site/JDK8-ce3b068baeac460ea54162483826bf6b)  
 [JDK9]()  
 [JDK10]()  
 [JDK11]()  
