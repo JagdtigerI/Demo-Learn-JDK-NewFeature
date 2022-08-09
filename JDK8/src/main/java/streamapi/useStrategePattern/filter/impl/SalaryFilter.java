@@ -1,8 +1,8 @@
-package streamapi.useStrategePattern.impl;
+package streamapi.useStrategePattern.filter.impl;
 
 
 import streamapi.User;
-import streamapi.useStrategePattern.MyFilter;
+import streamapi.useStrategePattern.filter.MyFilter;
 
 public class SalaryFilter implements MyFilter<User> {
     @Override
