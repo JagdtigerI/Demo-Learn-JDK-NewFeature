@@ -6,6 +6,7 @@ import java.util.List;
 /**
  * 需求是创建一个filter过滤一个List中的数据
  * 如果没有学习过lambda和stream api，那么你的代码将大概率是下面这样
+ * 但当新filter的需求不断增加时，该如何是好？
  */
 public class OriginCase {
     //过滤工资小于1000的数据
