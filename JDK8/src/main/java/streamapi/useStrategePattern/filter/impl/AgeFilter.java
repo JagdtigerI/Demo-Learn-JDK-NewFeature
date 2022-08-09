@@ -6,7 +6,7 @@ import streamapi.useStrategePattern.filter.MyFilter;
 
 public class AgeFilter implements MyFilter<User> {
     @Override
-    public boolean filter(User users) {
-        return users.getAge() >= 25;
+    public boolean filter(User user) {
+        return user.getAge() >= 25;
     }
 }
