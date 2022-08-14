@@ -1,14 +1,13 @@
-package streamapi.useStrategePatternAndLambda;
+package lambda.streamapi.useStrategePattern;
 
-import streamapi.User;
+import lambda.streamapi.User;
+import lambda.streamapi.useStrategePattern.filter.MyFilter;
+import lambda.streamapi.useStrategePattern.filter.impl.SalaryFilter;
 
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * 使用lambda表达式来快速实现一个接口，在本案例中是MyFilter2
- */
-public class ImprovedCaseByLambda {
+public class ImprovedCase {
     //限定年龄或工资
     public static List<User> filter(List<User> list, MyFilter<User> myFilter) {
         List<User> newList = new ArrayList<>();
@@ -28,13 +27,10 @@ public class ImprovedCaseByLambda {
         list.add(new User("aa3", 30, 3000));
         list.add(new User("aa4", 18, 4000));
         list.add(new User("aa5", 29, 5000));
-
-        //使用lambda表达式来快速实现一个接口
-
         //限定出大于25岁的用户
-        //List<User> selectedList = filter(list, (User user) -> user.getAge() > 25);
+        //List<User> selectedList = filter(list, new AgeFilter());
         //限定出薪水大于1000的用户
-        List<User> selectedList = filter(list, (user) -> user.getSalary() >= 1000);
+        List<User> selectedList = filter(list, new SalaryFilter());
         for (Object o : selectedList) {
             System.out.println(o);
         }

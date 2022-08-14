@@ -1,6 +1,6 @@
-package streamapi.useStreamApi;
+package lambda.streamapi.useStreamApi;
 
-import streamapi.User;
+import lambda.streamapi.User;
 
 import java.util.ArrayList;
 import java.util.List;

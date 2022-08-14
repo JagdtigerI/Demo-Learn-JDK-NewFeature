@@ -1,4 +1,4 @@
-package streamapi;
+package lambda.streamapi;
 
 public class User {
     private String name;

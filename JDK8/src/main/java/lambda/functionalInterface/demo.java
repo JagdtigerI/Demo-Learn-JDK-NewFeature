@@ -1,4 +1,4 @@
-package functionalInterface;
+package lambda.functionalInterface;
 
 import java.util.ArrayList;
 import java.util.List;

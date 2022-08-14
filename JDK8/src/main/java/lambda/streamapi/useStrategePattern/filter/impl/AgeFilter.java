@@ -1,8 +1,8 @@
-package streamapi.useStrategePattern.filter.impl;
+package lambda.streamapi.useStrategePattern.filter.impl;
 
 
-import streamapi.User;
-import streamapi.useStrategePattern.filter.MyFilter;
+import lambda.streamapi.User;
+import lambda.streamapi.useStrategePattern.filter.MyFilter;
 
 public class AgeFilter implements MyFilter<User> {
     @Override
