@@ -25,10 +25,11 @@ public class IntroExample {
                 count++;
             }
         }
-        System.out.println(count);
 
         //使用Stream API实现
         long count2 = data.stream().filter(s -> s.length() > 3).count();
+
+        System.out.println(count);
         System.out.println(count2);
 
     }
