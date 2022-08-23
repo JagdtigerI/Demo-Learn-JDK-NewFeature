@@ -3,7 +3,7 @@ package Base64;
 import java.util.Base64;
 
 /**
- * 一个即为简单的Base64演示程序
+ * 一个简单的Base64演示程序
  */
 public class Demo {
     public static void main(String[] args) {
