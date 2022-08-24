@@ -6,9 +6,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="JDK9-ModuleA" />
         <module name="JDK8" />
-        <module name="JDK9" />
+        <module name="JDK9-ModuleB" />
       </profile>
     </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="JDK9-ModuleA" options="" />
+    </option>
   </component>
 </project>

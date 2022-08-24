@@ -6,6 +6,7 @@
       <list>
         <option value="$PROJECT_DIR$/JDK8/pom.xml" />
         <option value="$PROJECT_DIR$/JDK9/pom.xml" />
+        <option value="$PROJECT_DIR$/JDK9-ModuleB/pom.xml" />
       </list>
     </option>
   </component>
