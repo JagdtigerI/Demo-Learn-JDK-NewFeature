@@ -1,4 +1,4 @@
-package test;
+package ModuleTest;
 
 import bean.UserInModuleA;
 
