@@ -12,5 +12,10 @@
 [JDK15]()
 
 ## tips
+
 推荐使用IDEA运行，如果在clone我的仓库之后.idea下的配置文件能生效是最好的情况     
 发现异常的话,你可能需要在项目结构中为每一个模块设定依赖和语言级别为不同的JDK版本
+
+另外IDEA可能将JDK9版本的相关模块辨别为Kotlin模块，这样可能会导致编译异常  
+解决方法之一是在构建菜单中点击 重新构建项目
+参考于[这里](https://stackoverflow.com/questions/53497454/intellij-idea-ultimate-2018-3-thinks-my-java-9-project-is-a-kotlin-project)
