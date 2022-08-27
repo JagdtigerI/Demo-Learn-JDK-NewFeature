@@ -17,5 +17,6 @@ public class Demo {
         //3.如果不想加泛型，则使⽤var
         Consumer<Object> consumer3 = (@SuppressWarnings("") var str) -> System.out.println(str);
         consumer3.accept("abc");
+        consumer3.accept(123);
     }
 }
