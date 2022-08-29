@@ -9,6 +9,7 @@
         <module name="JDK9-ModuleA" />
         <module name="JDK12" />
         <module name="JDK9-ModuleB" />
+        <module name="JDK13" />
         <module name="JDK11" />
         <module name="JDK8" />
       </profile>
