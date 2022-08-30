@@ -19,7 +19,7 @@
   参考于[这里](https://stackoverflow.com/questions/53497454/intellij-idea-ultimate-2018-3-thinks-my-java-9-project-is-a-kotlin-project)
 
 + 有些模块中的新特性是预览版本(preview)的，而JDK预览版本的特性是默认关闭的，所以一些相关代码无法通过编译。  
-  IDEA的提示是将依赖源设置为后续的JDK版本，我的做法是放弃运行示例代码，不折腾开启预览特性来运行示例代码了。
+  IDEA的提示是将依赖源设置为更新的JDK版本。或者可以放弃运行示例代码，不建议折腾开启JDK的预览特性。
 
 ------------------------------------------------------
 
