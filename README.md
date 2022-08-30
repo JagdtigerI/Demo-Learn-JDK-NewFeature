@@ -13,13 +13,14 @@
 
 ## tips
 
-推荐使用IDEA运行,你可能需要在项目结构中为每一个模块设定单独地依赖并将语言级别为不同的JDK版本
+推荐使用IDEA  
+你可能需要在项目结构中为每一个模块单独地设定依赖与语言级别为不同的JDK版本
+
+IDEA可能将JDK9版本的相关模块辨别为Kotlin模块，这样可能会导致编译异常  
+解决方法之一是在构建菜单中点击 重新构建项目
+参考于[这里](https://stackoverflow.com/questions/53497454/intellij-idea-ultimate-2018-3-thinks-my-java-9-project-is-a-kotlin-project)
 
 JDK12和13中的Switch表达式为预览版本的特性，直到JDK14后才正式支持  
 ~~可以在IDEA中设置模块的语言级别为14来避免编译报错~~   
 所以JDK12和13模块中的相关代码无法通过编译除非将依赖源设置为JDK14+  
-或者:启动Java预览特性，参考[文章](https://blog.csdn.net/chy555chy/article/details/108585027)
-
-另外IDEA可能将JDK9版本的相关模块辨别为Kotlin模块，这样可能会导致编译异常  
-解决方法之一是在构建菜单中点击 重新构建项目
-参考于[这里](https://stackoverflow.com/questions/53497454/intellij-idea-ultimate-2018-3-thinks-my-java-9-project-is-a-kotlin-project)
+或者:手动启动Java预览特性，参考[文章](https://blog.csdn.net/chy555chy/article/details/108585027)
