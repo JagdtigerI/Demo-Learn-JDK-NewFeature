@@ -13,14 +13,26 @@
 
 ## tips
 
-推荐使用IDEA  
-你可能需要在项目结构中为每一个模块单独地设定依赖与语言级别为不同的JDK版本
++ 推荐使用IDEA,你需要在项目结构中为每一个模块单独地设定依赖与语言级别为不同的JDK版本
 
-IDEA可能将JDK9版本的相关模块辨别为Kotlin模块，这样可能会导致编译异常  
-解决方法之一是在构建菜单中点击 重新构建项目
-参考于[这里](https://stackoverflow.com/questions/53497454/intellij-idea-ultimate-2018-3-thinks-my-java-9-project-is-a-kotlin-project)
++ IDEA可能将JDK9版本的那些模块辨别为Kotlin模块，这会导致编译异常。解决方法之一是在构建菜单中点击***重新构建项目***
+  参考于[这里](https://stackoverflow.com/questions/53497454/intellij-idea-ultimate-2018-3-thinks-my-java-9-project-is-a-kotlin-project)
 
-JDK12和13中的Switch表达式为预览版本的特性，直到JDK14后才正式支持  
-~~可以在IDEA中设置模块的语言级别为14来避免编译报错~~   
-所以JDK12和13模块中的相关代码无法通过编译除非将依赖源设置为JDK14+  
-或者:手动启动Java预览特性，参考[文章](https://blog.csdn.net/chy555chy/article/details/108585027)
++ 有些模块中的新特性是预览版本(preview)的，而JDK预览版本的特性是默认关闭的，所以一些相关代码无法通过编译。  
+  IDEA的提示是将依赖源设置为后续的JDK版本，我也建议不必开启预览特性来运行示例代码了。
+
+------------------------------------------------------
+
+### 如果你坚持要开启JDK的预览特性,这是我走过的一些弯路(2022-8月):
+
+（我在这上面浪费了将近一个小时，最后也没有一个方便的解决方案）  
+本项目的构建系统是Maven，所以我希望可以通过修改pom.xml文件来解决这个问题。
+首先我参考了[这篇文章](https://blog.csdn.net/chy555chy/article/details/108585027)，更新了我的pom配置后没有用。  
+然后继续查找了很多篇文章，进行了多次尝试，最后还是没有成功。  
+这里仅分享一篇还算有用的[StackOverflow帖子](https://stackoverflow.com/questions/52232681/compile-and-execute-a-jdk-preview-feature-with-maven)
+，在最新的一个回答中，应该只需要一行配置代码就可以开启JDK的预览特性了，但可能IDEA还没有适配  
+最后我放弃通过maven的插件方法来解决这个问题，并找到了通过修改IDEA中java编译器和vm参数的方式开启预览特性的方法。[文章链接🔗](https://foojay.io/today/how-to-run-project-loom-from-intellij-idea/)  
+本质上就是添加--enable-preview这个参数到javac和java后。
+
+在idea的[官方文档](https://www.jetbrains.com/idea/guide/tips/turn-on-preview-features/)中，开启最新版本的JDK(目前是19)
+的预览特性好像是很方便的，但JB好像没有考虑为老版本的JDK进行同样的配置。
