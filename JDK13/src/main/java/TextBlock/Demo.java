@@ -17,5 +17,10 @@ public class Demo {
                 </html>
                 """;
         System.out.println(text2);
+
+        //支持转义字符(虽然这是不必要的)
+        String text3 = """
+                12345\n67890
+                """;
     }
 }
