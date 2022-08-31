@@ -46,6 +46,9 @@
 
 ### **最后我的解决方案是：**
 
-我放弃通过maven的插件方法来解决这个问题，而是通过修改IDEA配置中java编译器和vm参数的方式来开启预览特性的方法。[文章链接🔗](https://foojay.io/today/how-to-run-project-loom-from-intellij-idea/)  
-这个操作本质上就是添加--enable-preview这个参数到javac和java后。  
+我放弃通过maven的插件方法来解决这个问题，而是通过修改IDEA配置中java编译器和vm参数的方式来开启预览特性的方法。[参考文章链接🔗](https://foojay.io/today/how-to-run-project-loom-from-intellij-idea/)  
+这个操作本质上就是添加--enable-preview这个参数到javac和java后。
 
+***tips:***  
+(IDEA2022.2) 在**运行/调试配置** 页面左下角点击编辑配置模版，   
+在模板页面中添加JVM参数：-enable-preview。这样就不用单独地为每一个配置文件添加参数了
