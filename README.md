@@ -16,10 +16,8 @@
 ## tips
 
 + 推荐使用IDEA,你需要在项目结构中为每一个模块单独地设定依赖与语言级别为不同的JDK版本
-
 +
 IDEA可能将JDK9的那些模块辨别为Kotlin模块导致编译异常。解决方法是重新构建项目，参考于[这里](https://stackoverflow.com/questions/53497454/intellij-idea-ultimate-2018-3-thinks-my-java-9-project-is-a-kotlin-project)
-
 + 有些新特性是预览版本(preview)的，而JDK预览版本的特性是默认关闭的，所以一些相关代码无法通过编译。
 + 如果你使用的是IDEA自己的构建系统IntelliJ，那么直接修改项目/模块的语言级别为带有(preview)
   前缀的就可以开启JDK预览特性了***但是IDEA仅提供了部分带preview的JDK选项***。(在2022.2中是JDK17、18、19、20)
