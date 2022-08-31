@@ -9,8 +9,8 @@
 [JDK10](https://seasidetown.notion.site/JDK10-1f7b4cbca315423b8bdcce7101324f94)  
 [JDK11](https://seasidetown.notion.site/JDK11-f66d855061534e3584c2384feb5dee0f)  
 [JDK12](https://seasidetown.notion.site/JDK12-9ae7ccedafd748ce8195fd882cf1c4aa)  
-[JDK13]()  
-[JDK14]()  
+[JDK13](https://seasidetown.notion.site/JDK13-2d1e8320cc384d0abd2ed578cd31b3de)  
+[JDK14](https://seasidetown.notion.site/JDK14-3efc1cd6234b44b395385eb76e517397)  
 [JDK15]()
 
 ## tips
