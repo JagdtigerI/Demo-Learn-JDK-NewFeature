@@ -18,14 +18,15 @@
 + IDEA可能将JDK9版本的那些模块辨别为Kotlin模块，这会导致编译异常。解决方法之一是在构建菜单中点击***重新构建项目***
   参考于[这里](https://stackoverflow.com/questions/53497454/intellij-idea-ultimate-2018-3-thinks-my-java-9-project-is-a-kotlin-project)
 
-+ 有些模块中的新特性是预览版本(preview)的，而JDK预览版本的特性是默认关闭的，所以一些相关代码无法通过编译。  
-  如果你使用的IDEA自己的构建系统IntelliJ，直接修改项目/模块 的语言级别为带有(preview)前缀的就行了实验性功能就行了，***
-  但是IDEA仅提供了部分新版本的JDK选项***。本项目我出于习惯使用了Maven，但目前好像通过修改pom的方式开启Java预览特性还比较麻烦，个人不建议折腾。
++ 有些模块中的新特性是预览版本(preview)的，而JDK预览版本的特性是默认关闭的，所以一些相关代码无法通过编译。如果你使用的IDEA自己的构建系统IntelliJ，直接修改项目/模块
+  的语言级别为带有(preview)前缀的就行了实验性功能就行了，***但是IDEA仅提供了部分新版本的JDK选项***。
+  本项目我出于习惯使用了Maven，但目前好像通过修改pom的方式开启Java预览特性还比较麻烦，个人不建议折腾。
 ------------------------------------------------------
 
 ### 如果你坚持要(在Maven构建的项目中)开启JDK的预览特性,这是我走过的一些弯路:
 
-本项目的构建系统是Maven，所以我希望可以通过修改pom.xml文件来解决这个问题。但是相继查找了很多篇文章，思路基本上都是添加`<compilerArgs>
+本项目(中部分模块)
+的构建系统是Maven，所以我希望可以通过修改pom.xml文件来解决这个问题。但是相继查找了很多篇文章，思路基本上都是添加`<compilerArgs>
 <arg>--enable-preview</arg>
 </compilerArgs>`到maven的编译器插件配置里，但进行了多次尝试，最后没有还有能成功开启JDK预览特性的。  
 这里仅分享一篇还算有用的[StackOverflow帖子](https://stackoverflow.com/questions/52232681/compile-and-execute-a-jdk-preview-feature-with-maven)
