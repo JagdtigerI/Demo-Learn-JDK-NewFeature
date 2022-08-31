@@ -27,12 +27,12 @@
 
 ### 如果你坚持要(在Maven构建的项目中)开启JDK的预览特性,这是我走过的一些弯路:
 
-本项目的构建系统是Maven，所以我希望可以通过修改pom.xml文件来解决这个问题。
-首先我参考了[这篇文章](https://blog.csdn.net/chy555chy/article/details/108585027)，更新了我的pom配置后没有用。  
-然后继续查找了很多篇文章，进行了多次尝试，最后还是没有成功。  
+本项目的构建系统是Maven，所以我希望可以通过修改pom.xml文件来解决这个问题。但是相继查找了很多篇文章，思路基本上都是添加`<compilerArgs>
+<arg>--enable-preview</arg>
+</compilerArgs>`到maven的编译器插件配置里，但进行了多次尝试，最后没有还有能成功开启JDK预览特性的。  
 这里仅分享一篇还算有用的[StackOverflow帖子](https://stackoverflow.com/questions/52232681/compile-and-execute-a-jdk-preview-feature-with-maven)
-，在最新的一个回答中，应该只需要一行配置代码就可以开启JDK的预览特性了，但试了一下没有用。  
-也许在以后的更新后，将这个参数添加到Maven的编译器插件中就可以了，但目前(2022-8月)好像IDEA还没有适配。
+，在最新的一个回答中，新版本的Maven编译器插件应该只需要一行配置代码就可以开启JDK的预览特性了，但试了一下还是没有用。  
+也许在以后的更新后，将这个参数添加到Maven的编译器插件中就可以了，但目前(2022-8月)在IDEA中使用还是存在问题。
 
 ```xml
 
