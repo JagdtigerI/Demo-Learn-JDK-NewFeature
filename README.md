@@ -11,7 +11,7 @@
 [JDK12](https://seasidetown.notion.site/JDK12-9ae7ccedafd748ce8195fd882cf1c4aa)  
 [JDK13](https://seasidetown.notion.site/JDK13-2d1e8320cc384d0abd2ed578cd31b3de)  
 [JDK14](https://seasidetown.notion.site/JDK14-3efc1cd6234b44b395385eb76e517397)  
-[JDK15]()
+[JDK15](https://seasidetown.notion.site/JDK15-fa67237dbd104173b59109d57c27be36)
 
 ## tips
 
